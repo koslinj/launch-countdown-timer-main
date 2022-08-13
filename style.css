@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 60px 0;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    color: white;
+    background: url(./images/pattern-hills.svg), url(./images/bg-stars.svg), linear-gradient(hsl(234, 17%, 12%) 0%, hsl(345, 95%, 68%) 400%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+h1{
+    letter-spacing: 8px;
+}
+.timer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 100px;
+}
+.timer p{
+    margin-top: 20px;
+    letter-spacing: 6px;
+    color: hsl(237, 18%, 59%);
+    font-size: 14px;
+}
+.square{
+    background-color: hsl(236, 21%, 26%);
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: hsl(345, 95%, 68%);
+}
+.icons{
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 30px;
+}
