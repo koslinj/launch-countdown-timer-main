@@ -42,11 +42,38 @@ h1{
     justify-content: center;
     font-size: 80px;
     color: hsl(345, 95%, 68%);
+    position: relative;
+}
+.square::before,
+.square::after{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 10px;
+    background-color: black;
+}
+.square::before{
+    left: 0px;
+    border-radius: 0px 10px 10px 0px;
+}
+.square::after{
+    right: 0px;
+    border-radius: 10px 0px 0px 10px;
 }
 .icons{
     margin-top: 180px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     height: 30px;
+}
+.icons svg{
+    transition: transform 0.3s;
+}
+.icons svg:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.icons svg:hover path{
+    fill: hsl(345, 95%, 68%);
 }
