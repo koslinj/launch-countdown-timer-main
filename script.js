@@ -1,5 +1,5 @@
 function counting() {
-    const ourDate = new Date("August 18 2023 9:11");
+    const ourDate = new Date("August 19 2023 9:11");
     const now = new Date();
     const diff = ourDate.getTime() - now.getTime();
 
